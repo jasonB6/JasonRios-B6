@@ -54,6 +54,7 @@ public class CozaLozaWoza {
 			} else {
 				System.out.println(E);
 			}
+			
 		} while (E < 36);
 	}
 }
