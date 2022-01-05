@@ -2,7 +2,7 @@ package com.noorteck.java.day10hw;
 
 public class Question2 {
 	public static void main(String[] args) {
-		getGender('f');
+		getGender('@');
 	}
 
 	public static void getGender(char gender) {
@@ -14,6 +14,9 @@ public class Question2 {
 		case 'f':
 		case 'F':
 			System.out.println("Female");
+			break;
+			default:
+				System.out.println("Invalid gender character");
 		}
 	}
 }
