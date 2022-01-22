@@ -18,7 +18,7 @@ public class QuestionEight {
 	public static char getCharacter(String strOne, int indexNum) {
 		char result = ' ';
 
-		if (indexNum > strOne.length()) { // IN OTHER WORDS:If the indexNum more than the length of String then return ‘?’ mark
+		if (indexNum >= strOne.length()) { // IN OTHER WORDS:If the indexNum more than the length of String then return ‘?’ mark
 			result = '?';
 		} else {
 			result = (strOne.charAt(indexNum)); // OTHERWISE: for String strOne, return character at the index requested.
