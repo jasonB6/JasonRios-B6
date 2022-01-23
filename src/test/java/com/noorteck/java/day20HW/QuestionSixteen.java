@@ -16,13 +16,17 @@ public class QuestionSixteen {
 
 	String concatString(String strOne, String strTwo) {
 		String result = "";
+		StringBuilder s2 = new StringBuilder(strTwo);
 
-		result = strOne.concat(strTwo);
+		String sameChar = strTwo.substring(0, 1);// needed a container variable that represents first char of strTwo....
 
-		String con = strTwo.substring(0, 1); // first letter of second string
-		if (strOne.endsWith(con)) { // if first string ends with same letter as first letter of second string...
-		// i got stuck here, not sure how to write logic to remove part of string
+		result = strOne.concat(strTwo); //first concatenate parameters...
+		if (strOne.endsWith(sameChar)) { //"If last char of strOne String is same as first char of strTwo (double characters)..."
+
+			result = strOne + s2.delete(0, 1);// "then remove one of the double characters
+
 		}
+
 		return result;
 	}
 }
